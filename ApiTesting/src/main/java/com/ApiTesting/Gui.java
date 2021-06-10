@@ -1118,7 +1118,7 @@ public class Gui extends javax.swing.JFrame {
 
     private void SearchButtonMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchButtonMouseReleased
         // TODO add your handling code here:
-        if("Enter Artist name".equals(ArtistField.getText()) || "Enter Track name".equals(TrackField.getText())) {
+        if("Enter Artist name".equals(ArtistField.getText()) || "Enter Track name".equals(TrackField.getText()) || "".equals(ArtistField.getText()) || "".equals(TrackField.getText())) {
             Loading.setForeground(Color.red);
             Loading.setText("Please enter artist and track info!!!");
         } else {
