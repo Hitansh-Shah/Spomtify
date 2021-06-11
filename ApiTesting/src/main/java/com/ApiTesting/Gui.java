@@ -72,7 +72,7 @@ public class Gui extends javax.swing.JFrame {
                             R1.addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mousePressed(MouseEvent e) {
-                                    
+                                    Loading.setForeground(Color.WHITE);
                                     
                                     ArtistField.setText(ANLabel1.getText());
                                     TrackField.setText(TNLabel1.getText());
@@ -131,7 +131,7 @@ public class Gui extends javax.swing.JFrame {
                             R2.addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mousePressed(MouseEvent e) {
-                                    
+                                    Loading.setForeground(Color.WHITE);
                                     
                                     ArtistField.setText(ANLabel2.getText());
                                     TrackField.setText(TNLabel2.getText());
@@ -188,7 +188,7 @@ public class Gui extends javax.swing.JFrame {
                             R3.addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mousePressed(MouseEvent e) {
-                                    
+                                    Loading.setForeground(Color.WHITE);
                                     
                                     ArtistField.setText(ANLabel3.getText());
                                     TrackField.setText(TNLabel3.getText());
@@ -246,7 +246,7 @@ public class Gui extends javax.swing.JFrame {
                             R4.addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mousePressed(MouseEvent e) {
-                                    
+                                    Loading.setForeground(Color.WHITE);
                                     
                                     ArtistField.setText(ANLabel4.getText());
                                     TrackField.setText(TNLabel4.getText());
@@ -305,7 +305,7 @@ public class Gui extends javax.swing.JFrame {
                             R5.addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mousePressed(MouseEvent e) {
-                                    
+                                    Loading.setForeground(Color.WHITE);
                                     
                                     ArtistField.setText(ANLabel5.getText());
                                     TrackField.setText(TNLabel5.getText());
@@ -365,7 +365,7 @@ public class Gui extends javax.swing.JFrame {
                             R6.addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mousePressed(MouseEvent e) {
-                                    
+                                    Loading.setForeground(Color.WHITE);
                                     
                                     ArtistField.setText(ANLabel6.getText());
                                     TrackField.setText(TNLabel6.getText());
