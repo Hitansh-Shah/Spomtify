@@ -1,6 +1,7 @@
 package com.ApiTesting;
 
 import org.jmusixmatch.MusixMatch;
+//import org.jmusixmatch.
 import org.jmusixmatch.MusixMatchException;
 import org.jmusixmatch.entity.track.Track;
 import org.jmusixmatch.entity.track.TrackData;
@@ -40,8 +41,14 @@ public class Main {
 
         String album_tracks_url = baseUrl + "album.tracks.get?album_id="+ URLEncoder.encode(albumID, StandardCharsets.UTF_8) + "&apikey=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
         String lyrics_url = "https://api.lyrics.ovh/v1/" + URLEncoder.encode(artistName, StandardCharsets.UTF_8) + "/" + URLEncoder.encode(trackName, StandardCharsets.UTF_8);
+//        System.out.println((lyrics_url));
 
-        Lyrics.getLyrics(lyrics_url);
+//        Lyrics.getLyrics(lyrics_url);
+
+        //some experiment
+        org.jmusixmatch.entity.lyrics.Lyrics otherlyrics = musixMatch.getLyrics(Integer.parseInt(trackID));
+//        System.out.println(otherlyrics.getLyricsBody());
+        Lyrics.setLyrics(otherlyrics.getLyricsBody());
 
 
         Album_Tracks.getAlbumTracks(album_tracks_url);
